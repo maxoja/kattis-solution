@@ -1,0 +1,8 @@
+ref : https://stackoverflow.com/questions/24089090/in-python-how-to-check-the-end-of-standard-input-streams-sys-stdin-and-do-som
+
+while True:
+    try:
+        s=input("> ")
+    except EOFError:
+        print("EOF")
+        break
