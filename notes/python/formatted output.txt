@@ -1,0 +1,7 @@
+ref : https://www.python-course.eu/python3_formatted_output.php
+
+[option 1]
+print('Case %d: %d %d %d' % (num_case, min_val, max_val, range_of_val))
+
+[option 2]
+‘{0:<20s} {1:6.2f}’.format('Spam & Eggs:', 6.99)
