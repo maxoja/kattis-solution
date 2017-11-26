@@ -26,7 +26,6 @@ for i in range(len(students)) :
 students = [ s[1] + ' ' + s[0] + ' ' + s[2] for s in students ]
 students = sorted(students)
 
-print(students)
 for s in students :
     s = s.split()
     if s[2] == 'with_last_name' :
