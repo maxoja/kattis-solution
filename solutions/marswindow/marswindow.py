@@ -1,15 +1,22 @@
-startm = 4
+remaining = 4
 year = int(input())
 
-difyear = year-2018
-difmonth = difyear*12 - startm
-print(difmonth)
-difmonth %= 26
+windowyears = {2018,}
+current = 2018
 
+while True:
+    if current == year:
+        print('yes')
+        break
+    
+    current += 2
+    remaining += 2
+    while remaining > 12:
+        remaining -= 12
+        current += 1
+    windowyears.add(current)
 
-if year == 2018:
-    print('yes')
-elif difmonth <= 11:
-    print('yes')
-else:
-    print('no')
+    if current > year:
+        print('no')
+        break
+
