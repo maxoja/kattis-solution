@@ -7,7 +7,7 @@ for _ in range(t):
     
     for __ in range(ncandle):
         cx,cy = tuple(map(float, input().split()))
-        if abs(cx-bx) <= 8 and abs(cy-by) <= 8:
+        if (abs(cx-bx)**2 + abs(cy-by)**2)**0.5 <= 8:
             possible = True
             
     if possible:
