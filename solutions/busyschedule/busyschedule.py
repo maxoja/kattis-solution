@@ -53,5 +53,3 @@ while n != 0:
         print(str(h)+':'+format(m,'02d'), ending)
         
     print()
-    
-    n = int(input())
